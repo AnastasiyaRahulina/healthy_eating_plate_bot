@@ -213,8 +213,7 @@ def callback_worker(call):
         keyboard.add(key_try)
         key_stop = types.InlineKeyboardButton(text='Stop', callback_data='stop')
         keyboard.add(key_stop)
-        bot.send_message(call.message.chat.id,
-                         text=f'Do you like it {name}? You can try again until you find THE ONE you need 🫶',
+        bot.send_message(call.message.chat.id, text=f'Do you like it {name}? You can try again until you find THE ONE you need 🫶',
                          reply_markup=keyboard)
     elif call.data == 'stop':
         bot.send_message(call.message.chat.id, 'Take care! Come back anytime 🫰🏻')
