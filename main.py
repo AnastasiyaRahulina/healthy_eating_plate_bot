@@ -443,9 +443,4 @@ for link in soup.find_all('a', class_='card__titleLink manual-link-behavior elem
     rec_dict['mango'] = rec_dict.get('mango', []) + [rec]
 
 
-def main():
-    bot.polling(none_stop=True)
-
-
-if __name__ == "__main__":
-    main()
+bot.polling(none_stop=True)
