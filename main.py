@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from telebot import types
 
-bot = telebot.TeleBot('5823753741:AAHoroJFYw61wVbdXIQmMpAtF1MN75FnJVk')
+bot = telebot.TeleBot(***)
 
 
 @bot.message_handler(content_types=['text'])
