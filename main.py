@@ -3,8 +3,10 @@ import random
 import requests
 from bs4 import BeautifulSoup
 from telebot import types
+import os
 
-bot = telebot.TeleBot(TOKEN)
+token = os.getenv("TOKEN")
+bot = telebot.TeleBot(token)
 
 
 @bot.message_handler(content_types=['text'])
